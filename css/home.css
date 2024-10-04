@@ -1,12 +1,12 @@
 main #principal {
     width: 100%;
     height: 400px;
-    background-image: url("../img/bolhaprateada.jpg");
+    background-image: url("../img/imagem\ natureza.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
     color: white;
-    text-shadow: 1px 1px 3px gray;
+    text-shadow: 1px 1px 3px;
     padding-top: 120px;
     box-sizing: border-box;
 }
@@ -54,20 +54,22 @@ article div.img {
 }
 
 #i1 {
-    background: url("../img/foto-g.jpg") center;
+    background: url("../img/images\ \(1\).jpg") center;
+    background-size: cover;
 }
 
 #i2 {
-    background: url("../img/foto-m.jpg") center;
+    background: url("../img/images.jpg") center;
+    background-size: cover;
 }
 
 #i3 {
-    background: url("../img/foto-p.jpg") top;
+    background: url("../img/linda-borboleta-na-natureza_23-2150445580.avif") top;
     background-size: cover;
 }
 
 #i4 {
-    background: url("../img/xicaradecafe.jpg") bottom;
+    background: url("../img/nature-pictures-ffm1xnpcdzxox0y7.jpg") bottom;
 }
 
 #i5 {
