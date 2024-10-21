@@ -53,6 +53,7 @@ button {
     cursor: pointer;
     font-size: 25px;
     font-weight: bold;
+    border-radius: 50px;
 }
 
 section p {
