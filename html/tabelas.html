@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <style>
+        main {
+            max-width: 1200px;
+            margin: 0 auto 20px;
+        }
+
+        section {
+            padding: 20px;
+            border-bottom: 1px dashed gray;
+        }
+
+        section h1 {
+            text-align: center;
+            font-size: 30px;
+            color: gray
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 20px;
+            color: gray;
+        }
+
+        #Tabela1 {
+            border: 3px solid black;
+            width: 80%;
+            margin: 30px auto;
+            font-size: 20px;
+            border-collapse: collapse;
+        }
+
+        #Tabela1 td {
+            background-color: white;
+            border: 2px solid black;
+            padding: 7px;
+        }
+
+        #Tabela1 #Linha1 td {
+            background-color: black;
+            border: 1px solid white;
+            color: #FFFFFF;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #Tabela2 {
+            border: 3px solid black;
+            border-collapse: collapse;
+            margin: 30px auto;
+
+            min-width: 500px;
+            height: 500px;
+        }
+
+        #Tabela2 #cabecalho td {
+            background-color: rgb(55, 55, 165);
+            color: #FFFFFF;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        #Tabela2 td {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        /* Tabela Simples Quadrada */
+        #t3 {
+            border: 5px solid darkblue;
+            border-collapse: collapse;
+            margin: 30px auto;
+            width: 100%;
+            font-size: 25px;
+        }
+
+        #t3 th {
+            padding: 10px;
+            background-color: darkblue;
+            color: lightblue;
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid lightblue;
+        }
+
+        #t3 td {
+            padding: 10px;
+            background-color: rgb(225, 255,253);
+            border: 2px solid darkblue;
+        }
+
+        /* Tabeka Completa*/
+
+        .Tabela3 {
+            border-collapse: collapse;
+            border: 3px black solid;
+            width: 100%;
+            font-size: 25px;
+            margin: 30px auto;
+
+            position: relative;
+        }
+
+       
+
+        .Tabela3 caption {
+            font-size: 26px;
+            font-style: italic;
+            color: black;
+            background-color: #FFFFFF;
+        }
+
+        .Tabela3 tr {
+            border-top: 1px solid;
+            background-color: #B5AA9D;
+        }
+
+        .Tabela3 td {
+            padding: 15px;
+            border: black solid 1px;
+
+        }
+        
+        .Tabela3 th {
+            padding: 10px;
+            background-color: #747274;
+            color: #FFFFFF;
+            font-style: italic;
+            border: solid 1px black;
+            
+        }
+
+        .Tabela3 tr:nth-child(2N) {
+            background-color: #B9B7A7;
+
+        }
+
+
+              
+        .Tabela3 tfoot th, tfoot td {
+            background-color: #747274;
+            color: #FFFFFF;
+            font-style: italic;
+            font-size: 20px;
+        }
+
+        .Tabela3 #LINK {
+            color: #FFFFFF;
+        }
+
+        .Tabela3 .alternada {
+            background-color: #B9B7A7;
+        }
+
+        .Tabela3 tbody > tr > td:nth-child(4) {
+            text-align: right;
+        }
+
+        .Tabela3 th:first-child .Tabela3 th:nth-child(3) {
+            width: 1px;
+        }
+
+        .Tabela3 tbody > tr > td:nth-child(6) {
+            text-align: center;
+            width: 5%;
+        }
+
+        .Tabela3 img {
+            width: 40px;
+        }
+        
+        .Tabela3 thead > tr > th {
+            position: sticky;
+            top: -4px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Parisotto</h1>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../sobre.html">SOBRE</a></li>
+                <li><a href="../contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Tabela Completa</h1>
+            <table class="Tabela3">
+                <caption>Tabela das unidades federativas do Brasil</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">Estado</th>
+                        <th>Sigla</th>
+                        <th>População</th>
+                        <th>Capital</th>
+                        <th>Região</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                    <td><img src="../img/sp.png" alt="SP"></td>
+                    <td >São Paulo</td>
+                    <td>SP</td>
+                    <td>45.973.194</td>
+                    <td>São Paulo</td>
+                    <td rowspan="4" >Sudeste</td>
+                   </tr>
+                   <tr>
+                    <td><img src="../img/mg.png" alt="MG"></td>
+                    <td>Minas Gerais</td>
+                    <td>MG</td>
+                    <td>19.597.330</td>
+                    <td>Belo Horizonte</td>
+                    
+                   </tr>
+                   <tr>
+                    <td><img src="../img/rj.png" alt="RJ"></td>
+                    <td>Rio de Janeiro</td>
+                    <td>RJ</td>
+                    <td>16.054.524</td>
+                    <td>Rio de Janeiro</td>
+                    
+                   </tr>
+                   <tr>
+                    <td><img src="../img/es.png" alt="ES"></td>
+                    <td>Espírito Santo</td>
+                    <td>ES</td>
+                    <td>4.108.508</td>
+                    <td>Vitória</td>
+                   
+                   </tr>
+                   <tr>
+                    <td><img src="../img/ba.png" alt="BA"></td>
+                    <td>Bahia</td>
+                    <td>BA</td>
+                    <td>14.136.417</td>
+                    <td>Salvador</td>
+                    <td rowspan="2" class="alternada">Nordeste</td>
+                   </tr>
+                   <tr>
+                    <td><img src="../img/pe.png" alt="PE"></td>
+                    <td>Pernambuco</td>
+                    <td>PE</td>
+                    <td>9.058.155</td>
+                    <td>Recife</td>
+                    
+                   </tr>
+                   <tr>
+                    <td><img src="../img/pr.png" alt="PR"></td>
+                    <td>Paraná</td>
+                    <td>PR</td>
+                    <td>11.824.665</td>
+                    <td>Curitiba</td>
+                    <td rowspan="3">Sul</td>
+                   </tr>
+                   <tr>
+                    <td><img src="../img/sc.png" alt="SC"></td>
+                    <td>Santa Catarina</td>
+                    <td>SC</td>
+                    <td>8.058.411</td>
+                    <td>Florianópolis</td>
+                    
+                   </tr>
+                   <tr>
+                    <td><img src="../img/rs.png" alt="RS"></td>
+                    <td>Rio Grande do Sul</td>
+                    <td>RS</td>
+                    <td>11.229.915</td>
+                    <td>Porto Alegre</td>
+                
+                   </tr>
+                </tbody>
+                <tfoot>
+                    <th colspan="4">Unidades Federativas</th>
+                    <td colspan="2" class="Fonte">Fonte: <a href="https://pt.wikipedia.org/wiki/Unidades_federativas_do_Brasil#Lista_sint%C3%A9tica" id="LINK">Wikipedia</a></td>
+
+                </tfoot>
+
+            </table>
+        </section>
+        <section>
+            <h1>Tabela Simples</h1>
+            <table id="Tabela1">
+                <tr id="Linha1">
+                    <td>Objetivo</td>
+                    <td>Metas</td>
+                    <td>Métricas</td>
+                </tr>
+                <tr>
+                    <td>Sucesso profissional</td>
+                    <td>Ganhar 10k</td>
+                    <td>Primeiro Emprego</td>
+                </tr>
+                <tr>
+                    <td>Desenvolvimento espiritual</td>
+                    <td>Meditação diária</td>
+                    <td>New Skills</td>
+                </tr>
+                <tr>
+                    <td>Faculdade</td>
+                    <td>8 horas de estudo diárias</td>
+                    <td>Ingressar em faculdade pública</td>
+                </tr>
+                <tr>
+                    <td>Academia</td>
+                    <td>3 vezes por semana</td>
+                    <td>Saúde em dia</td>
+                </tr>
+                <tr>
+                    <td>Aprender novo idioma</td>
+                    <td>30 minutos de estudo </td>
+                    <td>Nível Intermediario</td>
+                </tr>
+                <tr>
+                    <td>Investimentos</td>
+                    <td>20% do salário investido</td>
+                    <td>1.000 reais mensais de dividendos</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h1>Tabela Simples Quadrada</h1>
+            <table id="Tabela2">
+                <tr id="cabecalho">
+                    <td>País</td>
+                    <td>Cidade</td>
+                    <td>Bairro</td>
+                </tr>
+                <tr>
+                    <td>Brasil</td>
+                    <td>São Paulo</td>
+                    <td>Vila Andrade</td>
+                </tr>
+                <tr>
+                    <td>Estados Unidos</td>
+                    <td>New York</td>
+                    <td>Brooklyn</td>
+                </tr>
+                <tr>
+                    <td>Japão</td>
+                    <td>Tokyo</td>
+                    <td>Shibuya</td>
+                </tr>
+                <tr>
+                    <td>França</td>
+                    <td>Paris</td>
+                    <td>Montmartre</td>
+                </tr>
+                <tr>
+                    <td>Alemanha</td>
+                    <td>Berlim</td>
+                    <td>Kreuzberg</td>
+                </tr>
+                <tr>
+                    <td>Argentina</td>
+                    <td>Buenos Aires</td>
+                    <td>Palermo</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h1>Tabela com células mescladas</h1>
+            <table id="t3">
+                <thead>
+                    <tr>
+                        <th>Grupos</th>
+                        <th>Nomes</th>
+                        <th colspan="2">Filmes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="4">Meninas</td>
+                        <td>Milena</td>
+                        <td>A Volta dos que não Foram</td>
+                        <td>O Último dos Moicanos</td>
+                    </tr>
+                    <tr>
+                        <td>Sofia</td>
+                        <td>SCREAM</td>
+                        <td>Mine Craft</td>
+                    </tr>
+                    <tr>
+                        <td>Kyra</td>
+                        <td>Jumanji</td>
+                        <td>O Mistério do relógio Na Parede</td>
+                    </tr>
+                    <tr>
+                        <td>Ester</td>
+                        <td>A viagem de Chihiro</td>
+                        <td>Princesa Mononoke</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Meninos</td>
+                        <td>Marco</td>
+                        <td>Deadpool 30</td>
+                        <td>Fear and Hunger 2</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Antonio</td>
+                        <td>Cassino Royale</td>
+                        <td>Vindadores 30</td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Manja</td>
+                        <td>Interestelar</td>
+                        <td>As Branquelas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Copyright &copy; 2007-2024 - <a href="https://boucinhas.net" target="_blank">Boucinhas.Net Internet</a></p>
+        <p>Website Design by Daniel Boucinhas</p>
+    </footer>
+</body>
+
+</html>
