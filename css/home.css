@@ -58,7 +58,8 @@
 }
 
 #i2 {
-    background: url("../img/foto-m.jpg") center;
+    background: url("../img/1.jpg") center;
+    background-position: center 340px;
 }
 
 #i3 {
