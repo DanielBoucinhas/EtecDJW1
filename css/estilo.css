@@ -6,14 +6,15 @@
 
 a {
     text-decoration: none;
-    color: gray;
+    color: black;
 }
 
 header {
     padding-bottom: 10px;
-    color: gray;
+    color: black;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 header h1 {
